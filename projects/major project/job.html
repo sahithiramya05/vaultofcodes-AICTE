@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+<body style="background-image: url('https://www.toppan.co.th/wp-content/uploads/2021/08/happy-workplace.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <div class="container">
+        <section id="search" class="box">
+            <h2>Search a Job</h2>
+            <form id="jobForm">
+                <input type="text" id="jobTitle" placeholder="Job Title" required>
+                <input type="text" id="companyName" placeholder="Company Name" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+                <button onclick="searchJobs()">Search job</button>
+            </form>
+            <div id="jobListings"></div>
+        </section>
+        
+
+        <section id="post" class="box">
+            <h2>Post a Job</h2>
+            <form id="jobForm">
+                <input type="text" id="jobTitle" placeholder="Job Title" required>
+                <input type="text" id="companyName" placeholder="Company Name" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <blockquote>
+          "Opportunities don't happen, you create them."
+          <cite>- dreams come true</cite>
+        </blockquote>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
